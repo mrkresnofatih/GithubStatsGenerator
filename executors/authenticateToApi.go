@@ -7,8 +7,7 @@ import (
 )
 
 func Authenticate() {
-	// Remove On Production
-	os.Setenv("GH_TOKEN", "GHTOKEN")
+	os.Getenv("GH_TOKEN")
 
 	res, err := apis.GetUser()
 	utils.HandleIfError(err)
