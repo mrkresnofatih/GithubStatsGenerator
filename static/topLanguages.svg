@@ -1,0 +1,117 @@
+<svg width="400" height="210" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    svg {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    #background {
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      fill: rgb(25, 25, 25);
+      stroke: deeppink;
+      stroke-width: 3px;
+      rx: 8px;
+      ry: 8px;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+        transform: translate(0, -50%);
+      }
+
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+
+    .card_title {
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .language_container {
+      padding: 0;
+      height: 100px;
+      width: 350px;
+    }
+
+    .language {
+      margin: 0 8px 16px 0;
+      display: inline-block;
+      animation: fadeInAnimation ease 1s;
+    }
+
+    .lang {
+      padding: 2px 4px;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+      margin-right: 0px;
+    }
+
+    .percent {
+      padding: 2px 4px;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  </style>
+  <g>
+    <rect x="5" y="5" id="background" />
+    <g>
+      <foreignObject x="21" y="5" width="450" height="176">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+
+          <h2 class="card_title">Top Languages (By Size)</h2>
+
+          <div class="language_container">
+
+            <p class="language">
+              <span class="lang" style="background:#333C83;color:white;">C#</span>
+              <span class="percent" style="background:whitesmoke;">32.76%</span>
+            </p>
+
+            <p class="language">
+              <span class="lang" style="background:#F24A72;color:white;">Java</span>
+              <span class="percent" style="background:whitesmoke;">21.76%</span>
+            </p>
+
+            <p class="language">
+              <span class="lang" style="background:#00C897;color:white;">Go</span>
+              <span class="percent" style="background:whitesmoke;">12.76%</span>
+            </p>
+
+            <p class="language">
+              <span class="lang" style="background:#F76E11;color:white;">Python</span>
+              <span class="percent" style="background:whitesmoke;">0.86%</span>
+            </p>
+
+            <p class="language">
+              <span class="lang" style="background:#30AADD;color:white;">Rust</span>
+              <span class="percent" style="background:whitesmoke;">10.76%</span>
+            </p>
+
+            <p class="language">
+              <span class="lang" style="background:#5902EC;color:white;">Typescript</span>
+              <span class="percent" style="background:whitesmoke;">2.76%</span>
+            </p>
+
+            <p class="language">
+              <span class="lang" style="background:#008E89;color:white;">Javascript</span>
+              <span class="percent" style="background:whitesmoke;">1.76%</span>
+            </p>
+
+            <p class="language">
+              <span class="lang" style="background:#FE7E6D;color:white;">Dockerfile</span>
+              <span class="percent" style="background:whitesmoke;">0.86%</span>
+            </p>
+
+          </div>
+
+        </div>
+      </foreignObject>
+    </g>
+  </g>
+</svg>

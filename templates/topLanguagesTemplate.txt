@@ -1,0 +1,93 @@
+<svg width="400" height="210" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    svg {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    #background {
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      fill: rgb(25, 25, 25);
+      stroke: deeppink;
+      stroke-width: 3px;
+      rx: 8px;
+      ry: 8px;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+        transform: translate(0, -50%);
+      }
+
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+
+    .card_title {
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .language_container {
+      padding: 0;
+      height: 100px;
+      width: 350px;
+    }
+
+    .language {
+      margin: 0 8px 16px 0;
+      display: inline-block;
+      animation: fadeInAnimation ease 1s;
+    }
+
+    .lang {
+      padding: 2px 4px;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+      margin-right: 0px;
+    }
+
+    .percent {
+      padding: 2px 4px;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  </style>
+  <g>
+    <rect x="5" y="5" id="background" />
+    <g>
+      <foreignObject x="21" y="5" width="450" height="176">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+
+          <h2 class="card_title">Top Languages (By Size)</h2>
+
+          <div class="language_container">
+
+            @@@LANG0
+            
+            @@@LANG1
+            
+            @@@LANG2
+            
+            @@@LANG3
+            
+            @@@LANG4
+            
+            @@@LANG5
+            
+            @@@LANG6
+            
+            @@@LANG7
+
+          </div>
+
+        </div>
+      </foreignObject>
+    </g>
+  </g>
+</svg>
