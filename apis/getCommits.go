@@ -36,8 +36,19 @@ func GetCommits(repo string) (*[]GetCommitResponse, error) {
 		}
 
 		return &data, nil
-	} else {
-		e := utils.BuildError("getCommitsApi: StatusCode not 200 OK")
-		return nil, e
 	}
+
+	body, err4 := io.ReadAll(resp.Body)
+	utils.HandleIfError(err4)
+
+	data := map[string]string{}
+	json.Unmarshal([]byte(body), &data)
+
+	if data["message"] == "Git Repository is empty." && resp.StatusCode == http.StatusConflict {
+		empty := []GetCommitResponse{}
+		return &empty, nil
+	}
+
+	e := utils.BuildError("getCommitsApi: StatusCode not 200 OK")
+	return nil, e
 }

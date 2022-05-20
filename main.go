@@ -10,4 +10,6 @@ func main() {
 	executors.CreateMyRecentRepositories()
 	executors.CreateMyRecentLanguages()
 	executors.CreateMyRecentContributions()
+	executors.UploadFilesToGithub()
+	executors.CleanUp()
 }
