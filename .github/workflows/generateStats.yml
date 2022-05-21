@@ -11,5 +11,7 @@ jobs:
       - uses: actions/checkout@v2
         name: Check out code
       - name: Run the Github Stats Generator
-        #run: echo Test
-        run: docker run --name githubstatsgenerator -e "GH_TOKEN={{ secrets.GHSTATS_TOKEN }}" -e "REPO=mrkresnofatih" ghcr.io/mrkresnofatih/ghcr.io/mrkresnofatih/ghstatsgenerator:v1.0.6-dev
+        uses: addnab/docker-run-action@v3
+        with:
+          image: ghcr.io/mrkresnofatih/ghcr.io/mrkresnofatih/ghstatsgenerator:v1.0.6-dev
+          options: -e GH_TOKEN={{ secrets.GHSTATS_TOKEN }} -e REPO=mrkresnofatih
