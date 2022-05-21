@@ -12,4 +12,4 @@ jobs:
         name: Check out code
       - name: Run the Github Stats Generator
         #run: echo Test
-        run: docker run --name githubstatsgenerator -e GH_TOKEN={{ secrets.GHSTATS_TOKEN }} -e REPO=mrkresnofatih ghcr.io/mrkresnofatih/ghcr.io/mrkresnofatih/ghstatsgenerator:v1.0.6-dev
+        run: docker run --name githubstatsgenerator -e "GH_TOKEN={{ secrets.GHSTATS_TOKEN }}" -e "REPO=mrkresnofatih" ghcr.io/mrkresnofatih/ghcr.io/mrkresnofatih/ghstatsgenerator:v1.0.6-dev
