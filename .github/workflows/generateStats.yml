@@ -1,14 +1,14 @@
 name: Routine Github Generate Stats
 on:
   schedule:
-    - cron: '51 0 * * *'
+    - cron: '59 0 * * *'
 
 jobs:
   generate:
-    name: Build Docker Image & Push
+    name: Generate Github Stats
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         name: Check out code
-      - name: Run the build process with Docker
+      - name: Run the Github Stats Generator
         run: docker run --name githubstatsgenerator -e GH_TOKEN={{ secrets.GHSTATS_TOKEN }} -e REPO=mrkresnofatih ghcr.io/mrkresnofatih/ghcr.io/mrkresnofatih/ghstatsgenerator:v1.0.6-dev
