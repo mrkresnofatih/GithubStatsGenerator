@@ -18,6 +18,7 @@ docker run --name githubstatsgenerator -e GH_TOKEN=someGithubToken -e REPO=exist
 ```
 
 4. You probably want this to be ran in some cron tiggers. I'm currently testing this with `Github Actions`.
+5. The SVGs will be inside `generated` folder
 
 ## Releases
 
