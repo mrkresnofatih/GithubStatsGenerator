@@ -22,3 +22,7 @@ docker run --name githubstatsgenerator -e GH_TOKEN=someGithubToken -e REPO=exist
 ## Releases
 
 <img src="https://img.shields.io/badge/image-latest-green">
+
+## Developed using:
+
+<img src="https://img.shields.io/badge/golang-00ADD8?logo=go&logoColor=white&style=for-the-badge">
