@@ -1,6 +1,11 @@
 # GithubStatsGenerator
 
-Generate github stats in SVG using Go. 
+Generate github stats in SVG using Go. They generate 4 SVGs:
+
+![my toplangs](https://github.com/mrkresnofatih/mrkresnofatih/blob/main/generated/myTopLanguages.svg)
+![my recentrepos](https://github.com/mrkresnofatih/mrkresnofatih/blob/main/generated/myRecentRepositories.svg)
+![my recentlangs](https://github.com/mrkresnofatih/mrkresnofatih/blob/main/generated/myRecentLanguages.svg)
+![my contributions](https://github.com/mrkresnofatih/mrkresnofatih/blob/main/generated/myRecentContributions.svg)
 
 ## How To Get Started
 
