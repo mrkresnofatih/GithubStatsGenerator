@@ -17,6 +17,8 @@ Generate github stats in SVG using Go. They generate 4 SVGs:
 docker run --name githubstatsgenerator -e GH_TOKEN=someGithubToken -e REPO=existingRepoName ghcr.io/mrkresnofatih/ghcr.io/mrkresnofatih/ghstatsgenerator:latest
 ```
 
+4. You probably want this to be ran in some cron tiggers. I'm currently testing this with `Github Actions`.
+
 ## Releases
 
 <img src="https://img.shields.io/badge/image-latest-green">
