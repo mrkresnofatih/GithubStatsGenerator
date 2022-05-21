@@ -2,7 +2,7 @@ name: Dockerize the Application
 on:
   push:
     branches:
-      - master
+      - prod
 
 jobs:
   build-push:
@@ -16,6 +16,6 @@ jobs:
         with:
           image: ghcr.io/mrkresnofatih/ghstatsgenerator
           registry: ghcr.io
-          tags: latest, v1.0.${{ github.run_number }}-dev
+          tags: latest, v1.0.${{ github.run_number }}-prod
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_TOKEN }}
