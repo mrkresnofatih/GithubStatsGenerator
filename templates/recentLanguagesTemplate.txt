@@ -60,12 +60,12 @@
                 <div xmlns="http://www.w3.org/1999/xhtml">
                     <h2 class="card_title">Recently Used Languages (Top 4)</h2>
                     <div class="language_container">
-                        <span class="percent" style="background:#00C897;color:white;@@@AVAILABLE0"><code>@@@LANG0</code></span>
-                        <span class="percent" style="background:#F24A72;color:white;@@@AVAILABLE1"><code>@@@LANG1</code></span>
+                        <span class="percent" style="background:@@@COLOR1;color:white;@@@AVAILABLE0"><code>@@@LANG0</code></span>
+                        <span class="percent" style="background:@@@COLOR2;color:white;@@@AVAILABLE1"><code>@@@LANG1</code></span>
                     </div>
                     <div class="language_container">
-                        <span class="percent" style="background:#30AADD;color:white;@@@AVAILABLE2"><code>@@@LANG2</code></span>
-                        <span class="percent" style="background:#FE7E6D;color:white;@@@AVAILABLE3"><code>@@@LANG3</code></span>
+                        <span class="percent" style="background:@@@COLOR3;color:white;@@@AVAILABLE2"><code>@@@LANG2</code></span>
+                        <span class="percent" style="background:@@@COLOR4;color:white;@@@AVAILABLE3"><code>@@@LANG3</code></span>
                     </div>
                 </div>
             </foreignObject>
