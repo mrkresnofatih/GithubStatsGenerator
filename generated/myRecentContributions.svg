@@ -1,0 +1,78 @@
+<svg width="400" height="210" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        svg {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        #background {
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            fill: rgb(25, 25, 25);
+            stroke: deeppink;
+            stroke-width: 3px;
+            rx: 8px;
+            ry: 8px;
+        }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+        transform: translate(0, 100%);
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+        .card_title {
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .language_container {
+            padding: 0;
+            height: 110px;
+            width: 340px;
+            display: flex;
+            animation: fadeInAnimation ease 1s;
+            border-bottom: 1px solid darkslategrey;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .colorbars {
+            flex: 1;
+            margin: 0 4px 4px;
+        }
+
+        .colorbars1 { height: 100px; background-color: #008E89; }
+        .colorbars2 { height: 25px; background-color: #FE7E6D; }
+        .colorbars3 { height: 100px; background-color: #F76E11; }
+        .colorbars4 { height: 25px; background-color: #F24A72; }
+        .colorbars5 { height: 40px; background-color: #00C897; }
+        .colorbars6 { height: 40px; background-color: #5902EC; }
+        .colorbars7 { height: 85px; background-color: #333C83; }
+    </style>
+    <g>
+        <rect x="5" y="5" id="background" />
+        <g>
+            <foreignObject x="21" y="5" width="450" height="176">
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                    <h2 class="card_title">Recent Contributions (Last 7 Days)</h2>
+                    <div class="language_container">
+                        <div class="colorbars colorbars1"/>
+                        <div class="colorbars colorbars2"/>
+                        <div class="colorbars colorbars3"/>
+                        <div class="colorbars colorbars4"/>
+                        <div class="colorbars colorbars5"/>
+                        <div class="colorbars colorbars6"/>
+                        <div class="colorbars colorbars7"/>
+                    </div>
+                </div>
+            </foreignObject>
+        </g>
+    </g>
+</svg>
