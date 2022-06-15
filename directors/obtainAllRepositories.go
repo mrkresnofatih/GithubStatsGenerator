@@ -4,7 +4,6 @@ import (
 	apis "mrkresnofatih/githubstatsgenerator/apis"
 	utils "mrkresnofatih/githubstatsgenerator/utils"
 	"os"
-	"time"
 )
 
 func ObtainAllRepositories() []apis.GetRepositoriesResponse {
@@ -24,8 +23,6 @@ func ObtainAllRepositories() []apis.GetRepositoriesResponse {
 		} else {
 			run = false
 		}
-
-		time.Sleep(1 * time.Second)
 	}
 
 	return repos
